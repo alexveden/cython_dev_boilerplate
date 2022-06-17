@@ -12,9 +12,12 @@ A very rough sample script that automatically runs all tests and produces covera
 2. Anaconda python
 
 ## Installation
-1. Place `run_cython_coverage_annotations.py` in the `tests` directory one level above with `.pyx` files
+1. Place [cy_test/tests/run_cython_coverage_annotations.py](cy_test/tests/run_cython_coverage_annotations.py) in the yout `<proj>/<cython_package>/tests` directory one level above with `.pyx` files
 2. Run the script
 3. Open the report file at `tests/cy_coverage__(PYX_MODULE_NAME).html` 
 
+
 ## Result
+[run_cython_coverage_annotations.py source code](./cy_test/tests/run_cython_coverage_annotations.py)
+
 ![HTML report](./cython_coverage.png)

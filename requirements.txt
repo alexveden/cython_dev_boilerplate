@@ -1,0 +1,4 @@
+cython
+coverage
+nose
+numpy

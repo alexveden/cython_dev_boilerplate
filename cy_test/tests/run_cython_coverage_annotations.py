@@ -94,7 +94,7 @@ plugins = Cython.Coverage
 #os.environ['COVERAGE_DEBUG'] = 'plugin'
 
 main(['run', f'--data-file={coverage_data_fn}', f'--rcfile={coverage_rc_fn}', '-m', TEST_SUITE, f'./tests/'])
-main(['report', f'--data-file={coverage_data_fn}', f'--rcfile={coverage_rc_fn}'])
+
 # Add -i (to ignore coverage errors)
 main(['xml', f'--data-file={coverage_data_fn}', f'--rcfile={coverage_rc_fn}', '-i', '-o', coverage_xml_fn])
 

@@ -1,0 +1,41 @@
+package:
+  name: python
+  version: 3.9.7
+
+source:
+  fn: Python-3.9.7.tgz
+  url: https://www.python.org/ftp/python/3.9.7/Python-3.9.7.tgz
+  md5: 5f463f30b1fdcb545f156583630318b3
+
+build:
+  no_link: bin/python
+
+requirements:
+  build:
+    - bzip2       [unix]
+    - zlib        [unix]
+    - sqlite      [unix]
+    - readline    [unix]
+    - tk          [unix]
+    - openssl     [unix]
+    - xz          [unix]
+    #- system      [linux]
+  run:
+    - zlib        [unix]
+    - sqlite      [unix]
+    - readline    [unix]
+    - tk          [unix]
+    - openssl     [unix]
+    - xz          [unix]
+    #- system      [linux]
+
+test:
+  commands:
+    - python -V               [unix]
+#    - python3 -V              [unix]
+#    - python3-config --help   [unix]
+
+about:
+  home: http://www.python.org/
+  license: PSF
+  summary: general purpose programming language
